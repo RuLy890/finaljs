@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Registro</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+
+    <form id="encuestaForm">
+        <h2>Datos de Registro</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="clave">Clave:</label>
+        <input type="password" id="clave" name="clave" required><br>
+        
+        <h2>Preguntas del Cuestionario</h2>
+        
+        <!-- Preguntas de texto -->
+        <label for="pregunta1">1. ¿Qué es HTML?</label>
+        <input type="text" id="pregunta1" name="pregunta1" required>
+        
+        <label for="pregunta2">2. ¿Para qué se usa CSS?</label>
+        <input type="text" id="pregunta2" name="pregunta2" required>
+
+        <!-- Preguntas de selección múltiple -->
+        <h3>Preguntas de Selección Múltiple</h3>
+        
+        <div class="pregunta">
+            <p>Pregunta 3: ¿Qué significa HTML?</p>
+            <label><input type="radio" name="q1" value="a" required> a) Hyper Text Markup Language</label>
+            <label><input type="radio" name="q1" value="b"> b) High Tech Modern Language</label>
+            <label><input type="radio" name="q1" value="c"> c) Hyperlink and Text Markup Language</label>
+            <label><input type="radio" name="q1" value="d"> d) Home Tool Markup Language</label>
+        </div>
+
+        <div class="pregunta">
+            <p>Pregunta 4: ¿Cuál es la etiqueta HTML para crear un hipervínculo?</p>
+            <label><input type="radio" name="q2" value="a" required> a) &lt;link&gt;</label>
+            <label><input type="radio" name="q2" value="b"> b) &lt;a&gt;</label>
+            <label><input type="radio" name="q2" value="c"> c) &lt;href&gt;</label>
+            <label><input type="radio" name="q2" value="d"> d) &lt;url&gt;</label>
+        </div>
+
+        <div class="pregunta">
+            <p>Pregunta 5: ¿Cuál es la etiqueta HTML para insertar una línea horizontal?</p>
+            <label><input type="radio" name="q3" value="a" required> a) &lt;line&gt;</label>
+            <label><input type="radio" name="q3" value="b"> b) &lt;hr&gt;</label>
+            <label><input type="radio" name="q3" value="c"> c) &lt;linebreak&gt;</label>
+            <label><input type="radio" name="q3" value="d"> d) &lt;horizontal&gt;</label>
+        </div>
+
+        <div class="pregunta">
+            <p>Pregunta 6: ¿Qué etiqueta HTML se utiliza para crear una lista numerada?</p>
+            <label><input type="radio" name="q4" value="a" required> a) &lt;ul&gt;</label>
+            <label><input type="radio" name="q4" value="b"> b) &lt;li&gt;</label>
+            <label><input type="radio" name="q4" value="c"> c) &lt;ol&gt;</label>
+            <label><input type="radio" name="q4" value="d"> d) &lt;dl&gt;</label>
+        </div>
+
+        <div class="pregunta">
+            <p>Pregunta 7: ¿Cuál es la etiqueta HTML para crear un salto de línea?</p>
+            <label><input type="radio" name="q5" value="a" required> a) &lt;br&gt;</label>
+            <label><input type="radio" name="q5" value="b"> b) &lt;nl&gt;</label>
+            <label><input type="radio" name="q5" value="c"> c) &lt;lb&gt;</label>
+            <label><input type="radio" name="q5" value="d"> d) &lt;newline&gt;</label>
+        </div>
+
+        <div class="pregunta">
+            <p>Pregunta 8: ¿Cuál es la versión más reciente de HTML?</p>
+            <label><input type="radio" name="q6" value="a" required> a) HTML4</label>
+            <label><input type="radio" name="q6" value="b"> b) HTML5</label>
+            <label><input type="radio" name="q6" value="c"> c) XHTML</label>
+            <label><input type="radio" name="q6" value="d"> d) HTML6</label>
+        </div>
+
+        <div class="pregunta">
+            <p>Pregunta 9: ¿Qué propiedad CSS se usa para cambiar el color de fondo de un elemento?</p>
+            <label><input type="radio" name="q7" value="a" required> a) color</label>
+            <label><input type="radio" name="q7" value="b"> b) background-color</label>
+            <label><input type="radio" name="q7" value="c"> c) bg-color</label>
+            <label><input type="radio" name="q7" value="d"> d) color-background</label>
+        </div>
+        
+        <div class="pregunta">
+            <p>Pregunta 10: ¿Qué significa CSS?</p>
+            <label><input type="radio" name="q8" value="a" required> a) Color Style Sheets</label>
+            <label><input type="radio" name="q8" value="b"> b) Creative Style System</label>
+            <label><input type="radio" name="q8" value="c"> c) Cascading Style Sheets</label>
+            <label><input type="radio" name="q8" value="d"> d) Central Style System</label>
+        </div>
+        
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="tipo/variables.js"></script>
+</body>
+</html>
